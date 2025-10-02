@@ -34,7 +34,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange, totalPosts, postsPe
         <nav className="pagination">
             <ul className="pagination-list">
                 <li className={`pagination-item ${currentPage === 1 ? "disabled" : ""}`}>
-                    <button onClick={() => Pagination(1)} className="pagination-link" disabled={currentPage === 1}>
+                    <button onClick={() => onPageChange(1)} className="pagination-link" disabled={currentPage === 1}>
                         &laquo; First
                     </button>
                 </li>
